@@ -1,0 +1,35 @@
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 99;
+	padding: 18px 0;
+	background-color: var(--white-10);
+	box-shadow: 0 4px 6px rgb(55, 79, 76, 0.2);
+
+	@media (min-width: 1280px) {
+		padding: 24px 0;
+	}
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.list {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+
+	@media (min-width: 1280px) {
+		gap: 60px;
+	}
+}
+
+.btnMenu {
+	padding: 0;
+	& > div {
+		display: flex;
+	}
+}

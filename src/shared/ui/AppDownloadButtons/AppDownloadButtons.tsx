@@ -1,10 +1,10 @@
 import clsx from 'clsx';
 import { motion } from 'motion/react';
 import {
-	DownloadAppStore1x,
-	DownloadAppStore2x,
-	GetItOnGooglePlay1x,
-	GetItOnGooglePlay2x,
+	downloadAppStore1x,
+	downloadAppStore2x,
+	getItOnGooglePlay1x,
+	getItOnGooglePlay2x,
 } from '../../../assets';
 import css from './AppDownloadButtons.module.css';
 
@@ -33,8 +33,8 @@ export default function AppDownloadButtons({
 				{...btnAppDownloadAnimation}
 			>
 				<img
-					src={DownloadAppStore1x}
-					srcSet={`${DownloadAppStore1x} 1x, ${DownloadAppStore2x} 2x`}
+					src={downloadAppStore1x}
+					srcSet={`${downloadAppStore1x} 1x, ${downloadAppStore2x} 2x`}
 					alt='Download on the App Store'
 					width={162}
 					height={54}
@@ -47,8 +47,8 @@ export default function AppDownloadButtons({
 				{...btnAppDownloadAnimation}
 			>
 				<img
-					src={GetItOnGooglePlay1x}
-					srcSet={`${GetItOnGooglePlay1x} 1x, ${GetItOnGooglePlay2x} 2x`}
+					src={getItOnGooglePlay1x}
+					srcSet={`${getItOnGooglePlay1x} 1x, ${getItOnGooglePlay2x} 2x`}
 					alt='Get it on Google Play'
 					width={182}
 					height={54}

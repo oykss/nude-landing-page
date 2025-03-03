@@ -1,0 +1,12 @@
+.link {
+  display: inline-flex;
+  border: 1px solid var(--grey-30);
+  color: var(--white-10);
+  background-color: var(--grey-30);
+  padding: 6px 24px;
+  border-radius: 60px;
+
+  @media (min-width: 1280px) {
+    padding: 8px 24px;
+  }
+}

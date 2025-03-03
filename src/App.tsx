@@ -1,4 +1,4 @@
-import { Header, Hero } from './components';
+import { Benefits, Header, Hero } from './components';
 
 import { useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
@@ -19,6 +19,7 @@ export default function App() {
 			<Header />
 			<main>
 				<Hero />
+				<Benefits />
 			</main>
 		</>
 	);

@@ -1,0 +1,95 @@
+@import 'modern-normalize';
+@import url('./fonts/fonts.css');
+
+:root {
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Times New Roman', sans-serif;
+
+  --grey-10: #cad4bd;
+  --grey-20: #374f4c;
+  --grey-30: #3e3e42;
+  --white-10: #fdf7f0;
+  --white-20: #ede5dc;
+  --white-30: #f3dcc4;
+
+  --abs-black: #000;
+  --abs-white: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--grey-30);
+  background-color: var(--white-10);
+  line-height: 1.5;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+input,
+select {
+  outline: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

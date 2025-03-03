@@ -1,0 +1,62 @@
+.imgWrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.givingAway {
+	z-index: 3;
+}
+
+.imgWrap {
+	display: flex;
+	justify-content: center;
+	margin-right: -30px;
+}
+
+.videoWrap {
+	z-index: 4;
+	position: relative;
+	margin-top: -90px;
+
+	a {
+		position: absolute;
+		top: 53%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 194px;
+		font-family: var(--font-secondary);
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 1.2;
+		letter-spacing: 0.04em;
+		text-align: center;
+		color: var(--grey-20);
+	}
+}
+
+.stain {
+	opacity: 0.7;
+}
+
+.video {
+	margin-bottom: 12px;
+}
+
+.phone {
+	z-index: 5;
+
+	@media (max-width: 767px) {
+		margin-inline: auto;
+		height: auto;
+	}
+
+	@media (min-width: 1280px) {
+		margin-top: 30px;
+	}
+}
+
+.wrap {
+	display: flex;
+	flex-shrink: 0;
+}

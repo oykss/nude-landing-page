@@ -1,4 +1,10 @@
-import { Benefits, Header, Hero, HowNudeHelps } from './components';
+import {
+	Benefits,
+	Header,
+	Hero,
+	HowNudeHelps,
+	InstantKeys,
+} from './components';
 
 import { useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
@@ -21,6 +27,7 @@ export default function App() {
 				<Hero />
 				<Benefits />
 				<HowNudeHelps />
+				<InstantKeys />
 			</main>
 		</>
 	);

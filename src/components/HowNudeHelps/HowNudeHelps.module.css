@@ -1,0 +1,100 @@
+.howNudeHelps {
+	background-color: var(--grey-20);
+	padding: 50px 0;
+}
+
+.title {
+	font-family: var(--font-secondary);
+	font-weight: 400;
+	font-size: 46px;
+	line-height: 1.01;
+	letter-spacing: 0.04em;
+	text-align: center;
+	color: var(--white-20);
+	max-width: 589px;
+	margin-inline: auto;
+	margin-bottom: 24px;
+
+	@media (min-width: 768px) {
+		font-size: 74px;
+	}
+}
+
+.titleDesc {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.73333;
+	letter-spacing: 0.02em;
+	text-align: center;
+	color: var(--abs-white);
+	margin-bottom: 60px;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+
+	gap: 40px;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	@media (min-width: 768px) {
+		flex-direction: row;
+		justify-content: space-between;
+
+		&:nth-child(2n) {
+			flex-direction: row-reverse;
+		}
+	}
+
+	@media (min-width: 1280px) {
+		padding: 0 40px;
+	}
+}
+
+.subtitle {
+	font-family: var(--font-secondary);
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 1.24;
+	letter-spacing: 0.04em;
+	color: var(--white-20);
+	margin-bottom: 24px;
+	text-align: center;
+
+	@media (min-width: 768px) {
+		text-align: start;
+	}
+}
+
+.desc {
+	font-weight: 400;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.625;
+	letter-spacing: 0.02em;
+	color: #fff;
+
+	@media (min-width: 768px) {
+		text-align: start;
+	}
+}
+
+.wrap {
+	@media (min-width: 768px) {
+		max-width: 360px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.image {
+	flex-shrink: 0;
+	height: auto;
+}

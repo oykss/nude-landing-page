@@ -20,3 +20,13 @@ export { default as stain1x } from './Hero/stain@1x.png';
 export { default as stain2x } from './Hero/stain@2x.png';
 export { default as video1x } from './Hero/video@1x.png';
 export { default as video2x } from './Hero/video@2x.png';
+
+// How Nude Helps
+export { default as phone1_1x } from './HowNudeHelps/phone-1@1x.png';
+export { default as phone1_2x } from './HowNudeHelps/phone-1@2x.png';
+export { default as phone2_1x } from './HowNudeHelps/phone-2@1x.png';
+export { default as phone2_2x } from './HowNudeHelps/phone-2@2x.png';
+export { default as phone3_1x } from './HowNudeHelps/phone-3@1x.png';
+export { default as phone3_2x } from './HowNudeHelps/phone-3@2x.png';
+export { default as phone4_1x } from './HowNudeHelps/phone-4@1x.png';
+export { default as phone4_2x } from './HowNudeHelps/phone-4@2x.png';

@@ -1,7 +1,6 @@
 .instantKeys {
 	background-color: var(--grey-20);
 	padding: 60px 0 100px;
-	margin-bottom: 100px;
 	position: relative;
 
 	&::before {

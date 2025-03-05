@@ -1,5 +1,9 @@
 export { default as Benefits } from './Benefits/Benefits';
+export { default as Footer } from './Footer/Footer';
+export { default as FTBAccounts } from './FTBAccounts/FTBAccounts';
 export { default as Header } from './Header/Header';
 export { default as Hero } from './Hero/Hero';
 export { default as HowNudeHelps } from './HowNudeHelps/HowNudeHelps';
 export { default as InstantKeys } from './InstantKeys/InstantKeys';
+export { default as LetsGetUnpacked } from './LetsGetUnpacked/LetsGetUnpacked';
+export { default as LisaAndIsa } from './LisaAndIsa/LisaAndIsa';

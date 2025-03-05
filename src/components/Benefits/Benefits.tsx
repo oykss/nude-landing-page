@@ -18,7 +18,7 @@ export default function Benefits() {
 					loop={true}
 					breakpoints={{
 						768: { slidesPerView: 2 },
-						1280: { slidesPerView: 3 },
+						1280: { slidesPerView: 3, loop: false },
 					}}
 				>
 					{BENEFITS.map(({ icon, title, desc, color }, i) => (

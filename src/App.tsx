@@ -1,9 +1,13 @@
 import {
 	Benefits,
+	Footer,
+	FTBAccounts,
 	Header,
 	Hero,
 	HowNudeHelps,
 	InstantKeys,
+	LetsGetUnpacked,
+	LisaAndIsa,
 } from './components';
 
 import { useEffect } from 'react';
@@ -28,7 +32,11 @@ export default function App() {
 				<Benefits />
 				<HowNudeHelps />
 				<InstantKeys />
+				<FTBAccounts />
+				<LetsGetUnpacked />
 			</main>
+			<Footer />
+			<LisaAndIsa />
 		</>
 	);
 }

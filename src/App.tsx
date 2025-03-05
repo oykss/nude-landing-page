@@ -1,5 +1,8 @@
+import { useEffect } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import {
 	Benefits,
+	ContactUsModal,
 	Footer,
 	FTBAccounts,
 	Header,
@@ -8,10 +11,8 @@ import {
 	InstantKeys,
 	LetsGetUnpacked,
 	LisaAndIsa,
+	ScrollDownBtn,
 } from './components';
-
-import { useEffect } from 'react';
-import { useMediaQuery } from 'react-responsive';
 import { useStore } from './shared';
 
 export default function App() {
@@ -37,6 +38,8 @@ export default function App() {
 			</main>
 			<Footer />
 			<LisaAndIsa />
+			<ContactUsModal />
+			<ScrollDownBtn />
 		</>
 	);
 }

@@ -11,7 +11,12 @@ export { default as SocList } from './ui/SocList/SocList';
 export * from './styles/index.css';
 
 // constants
-export { default as BTN_ANIMATION } from './constants/animations';
+export {
+	BUTTON_PRIMARY_ANIMATION,
+	DOWN_ANIMATION,
+	FADE_ANIMATION,
+	RIGHT_ANIMATION,
+} from './constants/animations';
 
 //store
 export { default as useStore } from './store/store';

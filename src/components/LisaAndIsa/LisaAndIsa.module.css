@@ -1,0 +1,28 @@
+.section {
+	background-color: var(--white-30);
+	padding: 60px 0 40px;
+	color: var(--grey-30);
+}
+
+.letter {
+	border: 1px solid #484e54;
+	padding: 20px;
+	margin-bottom: 24px;
+
+	strong {
+		display: inline-flex;
+		margin-top: 12px;
+		font-size: 17px;
+	}
+}
+
+.copyright {
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	margin-bottom: 12px;
+}
+
+.police {
+	font-size: 12px;
+}

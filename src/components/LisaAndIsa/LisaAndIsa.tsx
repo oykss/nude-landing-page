@@ -1,11 +1,11 @@
-import { Container } from '../../shared';
+import { Animated, Container } from '../../shared';
 import css from './LisaAndIsa.module.css';
 
 export default function LisaAndIsa() {
 	return (
 		<section className={css.section}>
 			<Container>
-				<p className={css.letter}>
+				<Animated as='p' className={css.letter}>
 					Hey, here are some important things you should know 👋 <br />
 					<strong>
 						Our investing products (e.g. Nude Stocks & Shares LISA and ISA)
@@ -24,11 +24,11 @@ export default function LisaAndIsa() {
 					<br />
 					<strong>Market-leading interest rate</strong> The term market-leading
 					interest rate is based on our research as at 03/11/2022.
-				</p>
+				</Animated>
 				<p className={css.copyright}>
 					Copyright © Nude Finance Limited - 2022. All rights reserved.
 				</p>
-				<p className={css.police}>
+				<Animated as='p' className={css.police}>
 					Nude is a trading name of Nude Finance Limited, which is authorised
 					and regulated by the Financial Conduct Authority (FRN: 928010) and
 					registered as an account information services provider (FRN: 913654).
@@ -38,7 +38,7 @@ export default function LisaAndIsa() {
 					Finance Limited (12008146) (TM Reg No UK00003263387).We use cookies on
 					this site — some are for statistics and others are set up by
 					third-party services.
-				</p>
+				</Animated>
 			</Container>
 		</section>
 	);

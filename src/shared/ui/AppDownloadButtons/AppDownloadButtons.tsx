@@ -6,6 +6,10 @@ import {
 	getItOnGooglePlay1x,
 	getItOnGooglePlay2x,
 } from '../../../assets';
+import {
+	FADE_LEFT_ANIMATION_VP,
+	FADE_RIGHT_ANIMATION_VP,
+} from '../../constants/animations';
 import css from './AppDownloadButtons.module.css';
 
 const btnAppDownloadAnimation = {
@@ -31,6 +35,7 @@ export default function AppDownloadButtons({
 				target='_blank'
 				rel='noopener noreferrer'
 				{...btnAppDownloadAnimation}
+				{...FADE_LEFT_ANIMATION_VP}
 			>
 				<img
 					src={downloadAppStore1x}
@@ -45,6 +50,7 @@ export default function AppDownloadButtons({
 				target='_blank'
 				rel='noopener noreferrer'
 				{...btnAppDownloadAnimation}
+				{...FADE_RIGHT_ANIMATION_VP}
 			>
 				<img
 					src={getItOnGooglePlay1x}

@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { useEffect, useState } from 'react';
 import { MdKeyboardArrowUp } from 'react-icons/md';
-import { FADE_ANIMATION, useScreen } from '../../shared';
+import { BOUNCE, FADE_ANIMATION, useScreen } from '../../shared';
 import css from './ScrollDownBtn.module.css';
 
 export default function ScrollDownBtn() {
@@ -28,8 +28,10 @@ export default function ScrollDownBtn() {
 	return (
 		isVisible && (
 			<motion.button
+				type='button'
 				className={css.btn}
 				onClick={scrollToBottom}
+				{...BOUNCE}
 				{...FADE_ANIMATION}
 			>
 				<MdKeyboardArrowUp size={isMobile ? 52 : 40} color='#fdf7f0' />

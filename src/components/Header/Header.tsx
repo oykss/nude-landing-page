@@ -1,7 +1,8 @@
-import { AnimatePresence, motion } from 'motion/react';
+import { AnimatePresence } from 'motion/react';
 import { useState } from 'react';
 import { RiCloseLargeFill, RiMenu3Fill } from 'react-icons/ri';
 import {
+	Animated,
 	ContactUs,
 	Container,
 	Logo,
@@ -58,15 +59,16 @@ export default function Header() {
 							className={css.btnMenu}
 						>
 							<AnimatePresence mode='wait'>
-								{isMenuOpen ? (
-									<motion.div key='close' {...btnMenuAnimation}>
+								<Animated
+									key={isMenuOpen ? 'close' : 'menu'}
+									animation={btnMenuAnimation}
+								>
+									{isMenuOpen ? (
 										<RiCloseLargeFill color='#3e3e42' size={24} />
-									</motion.div>
-								) : (
-									<motion.div key='menu' {...btnMenuAnimation}>
+									) : (
 										<RiMenu3Fill color='#3e3e42' size={24} />
-									</motion.div>
-								)}
+									)}
+								</Animated>
 							</AnimatePresence>
 						</button>
 					)}

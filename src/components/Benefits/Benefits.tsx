@@ -1,14 +1,14 @@
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import { Container } from '../../shared';
+import { Animated, Container, UP_ANIMATION_VP } from '../../shared';
 import css from './Benefits.module.css';
 import BENEFITS from './constant';
 
 export default function Benefits() {
 	return (
-		<section className={css.benefits}>
-			<Container className={css.container}>
+		<Animated as='section' className={css.benefits}>
+			<Container className={css.container} animation={UP_ANIMATION_VP}>
 				<h2 className='visually-hidden'>Benefits</h2>
 				<Swiper
 					className={css.swiper}
@@ -34,6 +34,6 @@ export default function Benefits() {
 					))}
 				</Swiper>
 			</Container>
-		</section>
+		</Animated>
 	);
 }

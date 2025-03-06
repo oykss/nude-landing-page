@@ -1,17 +1,31 @@
 import { MdKeyboardArrowRight } from 'react-icons/md';
-import { Container } from '../../shared';
+import { Animated, Container, LEFT_ANIMATION_VP } from '../../shared';
 import css from './LetsGetUnpacked.module.css';
 
 export default function LetsGetUnpacked() {
 	return (
-		<section className={css.letsGetUnpacked}>
+		<Animated
+			as='section'
+			className={css.letsGetUnpacked}
+			initial={{ opacity: 0.5 }}
+			whileInView={{ opacity: 1 }}
+			viewport={{ once: true, amount: 0.2 }}
+			transition={{ duration: 0.5 }}
+		>
 			<Container>
-				<a href='#' className={css.btn}>
+				<Animated
+					as='a'
+					href='#'
+					className={css.btn}
+					animation={LEFT_ANIMATION_VP}
+				>
 					Find out more
 					<MdKeyboardArrowRight size={20} />
-				</a>
-				<h2 className={css.title}>Let's get you unpacked</h2>
+				</Animated>
+				<Animated as='h2' className={css.title}>
+					Let's get you unpacked
+				</Animated>
 			</Container>
-		</section>
+		</Animated>
 	);
 }

@@ -30,3 +30,39 @@ export const RIGHT_ANIMATION = {
 	exit: { x: '100%' },
 	transition: { duration: 0.4 },
 };
+
+export const UP_ANIMATION_VP = {
+	initial: { opacity: 0, y: 50 },
+	whileInView: { opacity: 1, y: 0 },
+	transition: { duration: 0.3 },
+	viewport: { once: true, amount: 0.2 },
+};
+
+export const LEFT_ANIMATION_VP = {
+	initial: { x: '-100%' },
+	whileInView: { x: 0 },
+	transition: { duration: 0.3 },
+	viewport: { once: true, amount: 0.2 },
+};
+
+export const FADE_LEFT_ANIMATION_VP = {
+	initial: { x: '-100%', opacity: 0 },
+	whileInView: { x: 0, opacity: 1 },
+	transition: { duration: 0.3 },
+	viewport: { once: true, amount: 0.2 },
+};
+
+export const FADE_RIGHT_ANIMATION_VP = {
+	initial: { x: '100%', opacity: 0 },
+	whileInView: { x: 0, opacity: 1 },
+	transition: { duration: 0.3 },
+	viewport: { once: true, amount: 0.2 },
+};
+
+export const BOUNCE = {
+	initial: { opacity: 1, scale: 1 },
+	whileHover: { scale: 1.05 },
+	whileFocus: { scale: 1.05 },
+	whileTap: { opacity: 0.9, scale: 0.95 },
+	transition: { duration: 0.5, type: 'spring', bounce: 0.5 },
+};

@@ -4,6 +4,10 @@
 
 .titleWrap {
 	max-width: 560px;
+
+	@media (min-width: 1280px) {
+		max-width: 650px;
+	}
 }
 
 .titleDesc {

@@ -18,16 +18,16 @@ export const FADE_ANIMATION = {
 };
 
 export const DOWN_ANIMATION = {
-	initial: { y: '-100%' },
+	initial: { y: -50 },
 	animate: { y: 0 },
-	exit: { y: '-100%' },
+	exit: { y: -50 },
 	transition: { duration: 0.4 },
 };
 
 export const RIGHT_ANIMATION = {
-	initial: { x: '100%' },
+	initial: { x: 50 },
 	animate: { x: 0 },
-	exit: { x: '100%' },
+	exit: { x: 50 },
 	transition: { duration: 0.4 },
 };
 
@@ -39,21 +39,21 @@ export const UP_ANIMATION_VP = {
 };
 
 export const LEFT_ANIMATION_VP = {
-	initial: { x: '-100%' },
+	initial: { x: -50 },
 	whileInView: { x: 0 },
 	transition: { duration: 0.3 },
 	viewport: { once: true, amount: 0.2 },
 };
 
 export const FADE_LEFT_ANIMATION_VP = {
-	initial: { x: '-100%', opacity: 0 },
+	initial: { x: -50, opacity: 0 },
 	whileInView: { x: 0, opacity: 1 },
 	transition: { duration: 0.3 },
 	viewport: { once: true, amount: 0.2 },
 };
 
 export const FADE_RIGHT_ANIMATION_VP = {
-	initial: { x: '100%', opacity: 0 },
+	initial: { x: 50, opacity: 0 },
 	whileInView: { x: 0, opacity: 1 },
 	transition: { duration: 0.3 },
 	viewport: { once: true, amount: 0.2 },

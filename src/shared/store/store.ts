@@ -1,8 +1,8 @@
 import { create } from 'zustand';
-import type { typeMediaSlice } from './mediaSlice';
-import { createMediaSlice } from './mediaSlice';
-import type { typeModalContactSlice } from './modalContactSlice';
-import { createModalContactSlice } from './modalContactSlice';
+import type { typeMediaSlice } from './mediaSlice/slice';
+import { createMediaSlice } from './mediaSlice/slice';
+import type { typeModalContactSlice } from './modalContactSlice/slice';
+import { createModalContactSlice } from './modalContactSlice/slice';
 
 type Store = typeModalContactSlice & typeMediaSlice;
 

@@ -1,11 +1,11 @@
 import { motion } from 'motion/react';
 import { useEffect, useState } from 'react';
 import { MdKeyboardArrowUp } from 'react-icons/md';
-import { BOUNCE, FADE_ANIMATION, useScreen } from '../../shared';
+import { BOUNCE, FADE_ANIMATION, useMediaPoints } from '../../shared';
 import css from './ScrollDownBtn.module.css';
 
 export default function ScrollDownBtn() {
-	const { isMobile } = useScreen();
+	const { isMobile } = useMediaPoints();
 	const [isVisible, setIsVisible] = useState<boolean>(false);
 
 	useEffect(() => {

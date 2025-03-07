@@ -4,16 +4,18 @@ import {
 	BUTTON_PRIMARY_ANIMATION,
 	FADE_ANIMATION,
 	RIGHT_ANIMATION,
-	useScreen,
-	useStore,
+	useCloseModal,
+	useIsOpen,
+	useMediaPoints,
 } from '../../shared';
 import ContactForm from './ContactForm/ContactForm';
 import css from './ContactUsModal.module.css';
 import PhonesSlider from './PhonesSlider/PhonesSlider';
 
-export default function ContactUsMenu() {
-	const { isOpen, closeModal } = useStore();
-	const { isMobile } = useScreen();
+export default function ContactUsModal() {
+	const isOpen = useIsOpen();
+	const closeModal = useCloseModal();
+	const { isMobile } = useMediaPoints();
 
 	return (
 		<AnimatePresence initial={false}>

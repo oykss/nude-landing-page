@@ -7,7 +7,7 @@ import {
 	Container,
 	Logo,
 	Navigation,
-	useScreen,
+	useMediaPoints,
 } from '../../shared';
 import MobileMenuModal from '../MobileMenuModal/MobileMenuModal';
 import css from './Header.module.css';
@@ -22,7 +22,7 @@ const btnMenuAnimation = {
 };
 
 export default function Header() {
-	const { isMobile } = useScreen();
+	const { isMobile } = useMediaPoints();
 	const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
 	const openMenu = () => {

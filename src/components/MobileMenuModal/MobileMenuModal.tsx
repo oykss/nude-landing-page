@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'motion/react';
-import { MouseEventHandler } from 'react';
+import { MouseEventHandler, useEffect } from 'react';
 import {
 	ContactUs,
 	Container,
@@ -7,18 +7,33 @@ import {
 	FADE_ANIMATION,
 	Navigation,
 	SocList,
+	useMediaPoints,
 } from '../../shared';
 import css from './MobileMenuModal.module.css';
 
 type PropsMobileMenuModal = {
 	isMenuOpen: boolean;
-	handleToggle: () => void;
+	closeMenu: () => void;
 };
 
 export default function MobileMenuModal({
 	isMenuOpen,
-	handleToggle,
+	closeMenu,
 }: PropsMobileMenuModal) {
+	const { isMobile } = useMediaPoints();
+
+	useEffect(() => {
+		if (!isMobile && isMenuOpen) {
+			document.body.style.overflow = 'hidden';
+		} else if (!isMobile && !isMenuOpen) {
+			document.body.style.overflow = '';
+		}
+
+		return () => {
+			document.body.style.overflow = '';
+		};
+	}, [isMobile, isMenuOpen]);
+
 	const handleClick: MouseEventHandler<HTMLDivElement> = e => {
 		const target = e.target as HTMLElement;
 
@@ -26,29 +41,31 @@ export default function MobileMenuModal({
 			!target.closest('[data-modal]') ||
 			['A', 'BUTTON'].includes(target.nodeName)
 		) {
-			handleToggle();
+			closeMenu();
 		}
 	};
 
 	return (
-		<AnimatePresence initial={false}>
-			{isMenuOpen ? (
-				<motion.div
-					className={css.overlay}
-					onClick={handleClick}
-					{...FADE_ANIMATION}
-				>
-					<motion.div className={css.modal} {...DOWN_ANIMATION} data-modal>
-						<Container>
-							<Navigation className={css.list} />
-							<div className={css.wrapper}>
-								<SocList />
-								<ContactUs />
-							</div>
-						</Container>
+		!isMobile && (
+			<AnimatePresence initial={false}>
+				{isMenuOpen ? (
+					<motion.div
+						className={css.overlay}
+						onClick={handleClick}
+						{...FADE_ANIMATION}
+					>
+						<motion.div className={css.modal} {...DOWN_ANIMATION} data-modal>
+							<Container>
+								<Navigation className={css.list} />
+								<div className={css.wrapper}>
+									<SocList />
+									<ContactUs />
+								</div>
+							</Container>
+						</motion.div>
 					</motion.div>
-				</motion.div>
-			) : null}
-		</AnimatePresence>
+				) : null}
+			</AnimatePresence>
+		)
 	);
 }

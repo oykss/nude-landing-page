@@ -25,15 +25,8 @@ export default function Header() {
 	const { isMobile } = useMediaPoints();
 	const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-	const openMenu = () => {
-		setIsMenuOpen(true);
-		document.body.style.overflow = 'hidden';
-	};
-
-	const closeMenu = () => {
-		setIsMenuOpen(false);
-		document.body.style.overflow = '';
-	};
+	const openMenu = () => setIsMenuOpen(true);
+	const closeMenu = () => setIsMenuOpen(false);
 
 	return (
 		<>
@@ -74,9 +67,7 @@ export default function Header() {
 					)}
 				</Container>
 			</header>
-			{!isMobile && (
-				<MobileMenuModal handleToggle={closeMenu} isMenuOpen={isMenuOpen} />
-			)}
+			<MobileMenuModal closeMenu={closeMenu} isMenuOpen={isMenuOpen} />
 		</>
 	);
 }

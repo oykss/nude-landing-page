@@ -26,5 +26,10 @@ export {
 //store
 export { default as useStore } from './store/store';
 
-//hooks
-export { default as useScreen } from './hooks/useScreen';
+//state
+export { useMediaPoints, useSetIsMediaPoints } from './store/mediaSlice/state';
+export {
+	useCloseModal,
+	useIsOpen,
+	useOpenModal,
+} from './store/modalContactSlice/state';

@@ -8,7 +8,10 @@ import BENEFITS from './constant';
 export default function Benefits() {
 	return (
 		<Animated as='section' className={css.benefits}>
-			<Container className={css.container} animation={UP_ANIMATION_VP}>
+			<Container
+				className={css.container}
+				animation={{ ...UP_ANIMATION_VP, transition: { delay: 0.3 } }}
+			>
 				<h2 className='visually-hidden'>Benefits</h2>
 				<Swiper
 					className={css.swiper}

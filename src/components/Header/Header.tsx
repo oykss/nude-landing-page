@@ -1,5 +1,5 @@
 import { AnimatePresence } from 'motion/react';
-import { useState } from 'react';
+import { lazy, Suspense, useState } from 'react';
 import { RiCloseLargeFill, RiMenu3Fill } from 'react-icons/ri';
 import {
 	Animated,
@@ -9,8 +9,11 @@ import {
 	Navigation,
 	useMediaPoints,
 } from '../../shared';
-import MobileMenuModal from '../MobileMenuModal/MobileMenuModal';
 import css from './Header.module.css';
+
+const MobileMenuModal = lazy(
+	() => import('../MobileMenuModal/MobileMenuModal')
+);
 
 const btnMenuAnimation = {
 	initial: { opacity: 0, y: 2 },
@@ -68,7 +71,9 @@ export default function Header() {
 					)}
 				</Container>
 			</header>
-			<MobileMenuModal closeMenu={closeMenu} isMenuOpen={isMenuOpen} />
+			<Suspense fallback={null}>
+				<MobileMenuModal closeMenu={closeMenu} isMenuOpen={isMenuOpen} />
+			</Suspense>
 		</>
 	);
 }

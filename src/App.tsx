@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import {
 	Benefits,
-	ContactUsModal,
 	Footer,
 	FTBAccounts,
 	Header,
@@ -14,6 +13,10 @@ import {
 	ScrollDownBtn,
 } from './components';
 import { useSetIsMediaPoints } from './shared';
+
+const ContactUsModal = lazy(
+	() => import('./components/ContactUsModal/ContactUsModal')
+);
 
 export default function App() {
 	const setIsMediaPoints = useSetIsMediaPoints();
@@ -39,7 +42,9 @@ export default function App() {
 			<Footer />
 			<LisaAndIsa />
 
-			<ContactUsModal />
+			<Suspense fallback={null}>
+				<ContactUsModal />
+			</Suspense>
 			<ScrollDownBtn />
 		</>
 	);

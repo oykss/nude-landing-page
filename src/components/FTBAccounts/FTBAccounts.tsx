@@ -1,4 +1,4 @@
-import { Animated, Container } from '../../shared';
+import { Animated, BUTTON_PRIMARY_ANIMATION, Container } from '../../shared';
 import FTB_ACCOUNTS from './constant';
 import css from './FTBAccounts.module.css';
 
@@ -19,14 +19,14 @@ export default function FTBAccounts() {
 				</Animated>
 			</Container>
 			<Animated className={css.container}>
-				<Animated
-					as='ul'
-					className={css.list}
-					initial='hidden'
-					whileInView='visible'
-					viewport={{ once: true, amount: 0.2 }}
-				>
-					<Container className={css.listWrap}>
+				<Container className={css.listWrap}>
+					<Animated
+						as='ul'
+						className={css.list}
+						initial='hidden'
+						whileInView='visible'
+						viewport={{ once: true, amount: 0.2 }}
+					>
 						{FTB_ACCOUNTS.map(({ title, alias, desc }, i) => (
 							<Animated
 								as='li'
@@ -40,9 +40,9 @@ export default function FTBAccounts() {
 								<p className={css.desc}>{desc}</p>
 							</Animated>
 						))}
-					</Container>
-				</Animated>
-				<Animated className={css.btnWrap}>
+					</Animated>
+				</Container>
+				<Animated className={css.btnWrap} {...BUTTON_PRIMARY_ANIMATION}>
 					<a href='#' className={css.btn}>
 						Coming soon
 					</a>

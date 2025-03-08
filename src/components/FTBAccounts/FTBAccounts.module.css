@@ -50,14 +50,14 @@
 }
 
 .list {
-	padding: 50px 0 60px;
-}
-
-.listWrap {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	gap: 30px;
+}
+
+.listWrap {
+	padding: 50px 0 60px;
 }
 
 .item {

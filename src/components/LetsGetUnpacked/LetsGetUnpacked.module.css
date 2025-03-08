@@ -2,6 +2,12 @@
 	background-image: url('../../assets/LetsGetUnpacked/background@1x.jpg');
 	background-size: cover;
 	background-position: center;
+
+	@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		background-image: url('../../assets/LetsGetUnpacked/background@2x.jpg');
+	}
 }
 
 .btn {
@@ -26,6 +32,6 @@
 	}
 
 	@media (min-width: 1280px) {
-		padding: 180px 0 280px;
+		padding: 250px 0 350px;
 	}
 }

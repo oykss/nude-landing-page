@@ -50,6 +50,7 @@ export default function Header() {
 							type='button'
 							onClick={isMenuOpen ? closeMenu : openMenu}
 							className={css.btnMenu}
+							aria-label='Menu button'
 						>
 							<AnimatePresence mode='wait'>
 								<Animated

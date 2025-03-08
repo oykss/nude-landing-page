@@ -14,6 +14,7 @@ export default function SocList() {
 							target='_blank'
 							rel='noopener noreferrer'
 							className={css.link}
+							aria-label='Social link'
 							{...BUTTON_PRIMARY_ANIMATION}
 						>
 							{icon}

@@ -88,7 +88,7 @@
 .wrap {
 	@media (min-width: 768px) {
 		max-width: 360px;
-		display: flex;
+		display: grid;
 		flex-direction: column;
 		justify-content: center;
 	}

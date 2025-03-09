@@ -7,6 +7,7 @@ import {
 	FADE_ANIMATION,
 	Navigation,
 	SocList,
+	useEscapeClose,
 	useMediaPoints,
 } from '../../shared';
 import css from './MobileMenuModal.module.css';
@@ -21,6 +22,8 @@ export default function MobileMenuModal({
 	closeMenu,
 }: PropsMobileMenuModal) {
 	const { isMobile } = useMediaPoints();
+
+	useEscapeClose(closeMenu);
 
 	useEffect(() => {
 		if (!isMobile && isMenuOpen) {

@@ -5,6 +5,7 @@ import {
 	FADE_ANIMATION,
 	RIGHT_ANIMATION,
 	useCloseModal,
+	useEscapeClose,
 	useIsOpen,
 	useMediaPoints,
 } from '../../shared';
@@ -16,6 +17,8 @@ export default function ContactUsModal() {
 	const isOpen = useIsOpen();
 	const closeModal = useCloseModal();
 	const { isMobile } = useMediaPoints();
+
+	useEscapeClose(closeModal);
 
 	return (
 		<AnimatePresence initial={false}>

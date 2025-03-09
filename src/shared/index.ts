@@ -33,3 +33,6 @@ export {
 	useIsOpen,
 	useOpenModal,
 } from './store/modalContactSlice/state';
+
+// hooks
+export { default as useEscapeClose } from './hooks/useEscapeClose';

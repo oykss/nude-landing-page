@@ -5,8 +5,8 @@ import App from './App.tsx';
 import './shared';
 
 createRoot(document.getElementById('root')!).render(
-	<StrictMode>
-		<App />
-		<Toaster position='top-right' reverseOrder={false} />
-	</StrictMode>
+  <StrictMode>
+    <App />
+    <Toaster position='top-right' reverseOrder={false} />
+  </StrictMode>
 );

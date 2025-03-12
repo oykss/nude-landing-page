@@ -1,37 +1,37 @@
 .letsGetUnpacked {
-	background-image: url('../../assets/LetsGetUnpacked/background@1x.jpg');
-	background-size: cover;
-	background-position: center;
+  background-image: url('../../assets/LetsGetUnpacked/background@1x.jpg');
+  background-size: cover;
+  background-position: center;
 
-	@media (min-device-pixel-ratio: 2),
-		(min-resolution: 192dpi),
-		(min-resolution: 2dppx) {
-		background-image: url('../../assets/LetsGetUnpacked/background@2x.jpg');
-	}
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../../assets/LetsGetUnpacked/background@2x.jpg');
+  }
 }
 
 .btn {
-	margin-top: 20px;
-	display: inline-flex;
-	align-items: center;
-	color: var(--white-10);
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--white-10);
 }
 
 .title {
-	font-family: var(--font-secondary);
-	font-weight: 400;
-	font-size: 46px;
-	line-height: 1;
-	letter-spacing: 0.04em;
-	text-align: center;
-	color: var(--white-20);
-	padding: 100px 0 200px;
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--white-20);
+  padding: 100px 0 200px;
 
-	@media (min-width: 768px) {
-		font-size: 85px;
-	}
+  @media (min-width: 768px) {
+    font-size: 85px;
+  }
 
-	@media (min-width: 1280px) {
-		padding: 250px 0 350px;
-	}
+  @media (min-width: 1280px) {
+    padding: 250px 0 350px;
+  }
 }

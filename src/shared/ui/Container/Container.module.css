@@ -1,16 +1,16 @@
 .container {
-	max-width: 375px;
-	margin: 0 auto;
-	padding: 0 24px;
-	overflow: hidden;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 24px;
+  overflow: hidden;
 
-	@media (min-width: 768px) {
-		max-width: 720px;
-		padding: 0 48px;
-	}
+  @media (min-width: 768px) {
+    max-width: 720px;
+    padding: 0 48px;
+  }
 
-	@media (min-width: 1280px) {
-		max-width: 1098px;
-		padding: 0 91px;
-	}
+  @media (min-width: 1280px) {
+    max-width: 1098px;
+    padding: 0 91px;
+  }
 }

@@ -1,65 +1,65 @@
 .form {
-	display: grid;
-	gap: 32px;
-	flex-shrink: 0;
-	background-color: var(--white-10);
-	border-radius: 12px;
-	padding: 24px;
-	box-shadow: 0 4px 6px rgb(55, 79, 76, 0.2);
+  display: grid;
+  gap: 32px;
+  flex-shrink: 0;
+  background-color: var(--white-10);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgb(55, 79, 76, 0.2);
 
-	label {
-		position: relative;
-	}
+  label {
+    position: relative;
+  }
 
-	input,
-	textarea {
-		background-color: transparent;
-		border: 1px solid var(--grey-20);
-		border-radius: 12px;
-		padding: 16px 32px 12px 20px;
-		width: 100%;
-	}
+  input,
+  textarea {
+    background-color: transparent;
+    border: 1px solid var(--grey-20);
+    border-radius: 12px;
+    padding: 16px 32px 12px 20px;
+    width: 100%;
+  }
 
-	textarea {
-		resize: none;
-		height: 120px;
-		outline: none;
-	}
+  textarea {
+    resize: none;
+    height: 120px;
+    outline: none;
+  }
 
-	span {
-		position: absolute;
-		transform: translateY(-50%);
-		left: 16px;
-		color: var(--grey-20);
-		background-color: var(--white-10);
-		padding: 0 6px;
-		border-radius: 6px;
-	}
+  span {
+    position: absolute;
+    transform: translateY(-50%);
+    left: 16px;
+    color: var(--grey-20);
+    background-color: var(--white-10);
+    padding: 0 6px;
+    border-radius: 6px;
+  }
 }
 
 .btnReset {
-	position: absolute;
-	top: 17px;
-	right: 4px;
+  position: absolute;
+  top: 17px;
+  right: 4px;
 }
 
 .button {
-	display: inline-flex;
-	justify-content: center;
-	margin-inline: auto;
-	width: 100px;
-	font-size: 18px;
-	border: 1px solid var(--grey-30);
-	color: var(--white-10);
-	background-color: var(--grey-30);
-	padding: 6px 0;
-	border-radius: 60px;
+  display: inline-flex;
+  justify-content: center;
+  margin-inline: auto;
+  width: 100px;
+  font-size: 18px;
+  border: 1px solid var(--grey-30);
+  color: var(--white-10);
+  background-color: var(--grey-30);
+  padding: 6px 0;
+  border-radius: 60px;
 }
 
 .error {
-	position: absolute;
-	color: red;
-	font-size: 12px;
-	bottom: -20px;
-	left: 12px;
+  position: absolute;
+  color: red;
+  font-size: 12px;
+  bottom: -20px;
+  left: 12px;
 }

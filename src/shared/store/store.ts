@@ -7,8 +7,8 @@ import { createModalContactSlice } from './modalContactSlice/slice';
 type Store = typeModalContactSlice & typeMediaSlice;
 
 const useStore = create<Store>()((...a) => ({
-	...createMediaSlice(...a),
-	...createModalContactSlice(...a),
+  ...createMediaSlice(...a),
+  ...createModalContactSlice(...a),
 }));
 
 export default useStore;

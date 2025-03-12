@@ -1,21 +1,21 @@
 import { StateCreator } from 'zustand';
 
 export type typeModalContactSlice = {
-	isOpen: boolean;
-	openModal: () => void;
-	closeModal: () => void;
+  isOpen: boolean;
+  openModal: () => void;
+  closeModal: () => void;
 };
 
 export const createModalContactSlice: StateCreator<
-	typeModalContactSlice
+  typeModalContactSlice
 > = set => ({
-	isOpen: false,
-	openModal: () => {
-		set({ isOpen: true });
-		document.body.style.overflow = 'hidden';
-	},
-	closeModal: async () => {
-		set({ isOpen: false });
-		document.body.style.overflow = '';
-	},
+  isOpen: false,
+  openModal: () => {
+    set({ isOpen: true });
+    document.body.style.overflow = 'hidden';
+  },
+  closeModal: async () => {
+    set({ isOpen: false });
+    document.body.style.overflow = '';
+  },
 });

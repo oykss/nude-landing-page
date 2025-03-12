@@ -1,9 +1,9 @@
 .wrapper {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
 
-	img {
-		height: auto;
-	}
+  img {
+    height: auto;
+  }
 }

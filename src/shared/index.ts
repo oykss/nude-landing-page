@@ -12,15 +12,15 @@ export * from './styles/index.css';
 
 // constants
 export {
-	BOUNCE,
-	BUTTON_PRIMARY_ANIMATION,
-	DOWN_ANIMATION,
-	FADE_ANIMATION,
-	FADE_LEFT_ANIMATION_VP,
-	FADE_RIGHT_ANIMATION_VP,
-	LEFT_ANIMATION_VP,
-	RIGHT_ANIMATION,
-	UP_ANIMATION_VP,
+  BOUNCE,
+  BUTTON_PRIMARY_ANIMATION,
+  DOWN_ANIMATION,
+  FADE_ANIMATION,
+  FADE_LEFT_ANIMATION_VP,
+  FADE_RIGHT_ANIMATION_VP,
+  LEFT_ANIMATION_VP,
+  RIGHT_ANIMATION,
+  UP_ANIMATION_VP,
 } from './constants/animations';
 
 //store
@@ -29,9 +29,9 @@ export { default as useStore } from './store/store';
 //state
 export { useMediaPoints, useSetIsMediaPoints } from './store/mediaSlice/state';
 export {
-	useCloseModal,
-	useIsOpen,
-	useOpenModal,
+  useCloseModal,
+  useIsOpen,
+  useOpenModal,
 } from './store/modalContactSlice/state';
 
 // hooks
